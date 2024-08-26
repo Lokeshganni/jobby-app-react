@@ -23,12 +23,16 @@ const NavBar = props => {
         </Link>
         <ul className="nav-items-icons-container">
           <li>
-            <AiFillHome className="nav-item-icon" />
+            <Link to="/" className="link-ele">
+              <AiFillHome className="nav-item-icon" />
+            </Link>
           </li>
           <li>
-            <BsBriefcaseFill className="nav-item-icon" />
+            <Link to="/jobs" className="link-ele">
+              <BsBriefcaseFill className="nav-item-icon" />
+            </Link>
           </li>
-          <li>
+          <li onClick={onClickLogout}>
             <FiLogOut className="nav-item-icon" />
           </li>
         </ul>
@@ -41,14 +45,18 @@ const NavBar = props => {
             className="navbar-website-logo"
           />
         </Link>
-        <div className="nav-items-container">
-          <Link to="/" className="link-ele-para">
-            Home
-          </Link>
-          <Link to="/jobs" className="link-ele-para">
-            Jobs
-          </Link>
-        </div>
+        <ul className="nav-items-container">
+          <li className="nav-items-li-container">
+            <Link to="/" className="link-ele-para">
+              Home
+            </Link>
+          </li>
+          <li className="nav-items-li-container">
+            <Link to="/jobs" className="link-ele-para">
+              Jobs
+            </Link>
+          </li>
+        </ul>
 
         <button onClick={onClickLogout} type="button">
           Logout

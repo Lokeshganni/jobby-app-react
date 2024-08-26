@@ -21,7 +21,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 40px;
+    padding: 10px 40px;
   }
 }
 
@@ -74,6 +74,11 @@
   .nav-items-container {
     display: flex;
     color: #f8fafc;
+    padding: 0;
+  }
+
+  .nav-items-li-container {
+    list-style-type: none;
   }
 
   .link-ele-para {
